@@ -1,0 +1,13 @@
+#include "Line.hpp"
+
+Line::Line(int plength):m_length(plength)
+{
+}
+
+void Line::draw(std::ostream &os)
+{
+  for(int i=0;i<m_length;i++){
+    os << "-";
+  }
+  return;
+}

@@ -1,0 +1,15 @@
+#ifndef _LINE_HPP_
+#define _LINE_HPP_
+
+#include <iostream>
+
+class Line
+{
+public:
+  Line(int plength);
+  void draw(std::ostream &os);
+protected:
+  int m_length;
+};
+
+#endif

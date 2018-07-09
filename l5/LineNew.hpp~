@@ -1,0 +1,15 @@
+#ifndef _LINENEW_HPP_
+#define _LINENEW_HPP_
+
+#include <iostream>
+
+class LineNew
+{
+public:
+  LineNew(int plength);
+  void draw(std::ostream &os);
+private:
+  int m_length;
+};
+
+#endif
