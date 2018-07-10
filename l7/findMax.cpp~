@@ -1,0 +1,17 @@
+template <class T> T& findMax(T *iarray,int nentries)
+{
+  T *maxvalue;
+  T *p = iarray;
+  *maxvalue = 0;
+
+  for(int i=0;i<nentries;i++){
+    if(0==i){
+      maxvalue = p;
+    }else if(*maxvalue<*p){
+      maxvalue = p;
+      p++;
+    }
+  }
+
+  return maxvalue;
+}

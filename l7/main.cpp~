@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stdlib.h>
+#include "findMax.cpp"
+
+int main(int argc,char **argv)
+{
+  int iarray[100];
+  double darray[100];
+
+  unsigned int iseed = 0;
+
+  if(argc>1){
+    iseed = atoi(*++argv);
+  }
+  for(int i=0;i<100;i++){
+    iarray[i] = rand_r(&iseed);
+    darray[i] = (double)rand_r(&iseed);
+  }
+
+  std::cout << findMax<int>(iarray,100) << std::endl;
+  std::cout << findMax<double>(darray,100) << std::endl;
+
+  return 0;
+}
