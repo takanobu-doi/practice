@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+
+int main()
+{
+  std::vector<const char*>names(4);
+  names[0] = "sakamoto";
+  names[1] = "kawagoe";
+  names[2] = "ohmachi";
+  names[3] = "fukunaga";
+
+  for(int i=0;i<names.size();i++){
+    std::cout << i << ": " << names[i] << std::endl;
+  }
+
+  std::cout << "size: " << names.size() << std::endl;
+
+  return 0;
+}
